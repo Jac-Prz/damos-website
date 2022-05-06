@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Bitter&family=Cormorant+Garamond&family=Cuprum:wght@400;500;600&family=EB+Garamond:wght@400;500&family=Josefin+Slab&family=Maven+Pro&family=PT+Sans+Caption&family=Quattrocento&family=Quattrocento+Sans&family=Rokkitt&family=Slabo+27px&family=Zilla+Slab&display=swap');
+
+
+body {
+  margin: 0;
+  color:white;
+  font-family: 'Maven Pro', sans-serif;
+  font-weight: 500;
+  text-align: left;
+  background-color: black;
+}
+h1, h2, h3{
+  font-family: 'EB Garamond', serif;
+  font-weight: normal;
+}
+h1{
+font-size: 4rem;
+}
+h2{
+  font-size: 3rem;
+}
+h3{
+  font-size: 2.5rem;
+  }
+h4{
+  font-size: 1.3rem;
+  font-weight: normal;
+  }
+
+ul {
+  list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    }
+/* navbar */
+nav {
+  box-shadow: 0 4px 10px #9D9D9D;
+  font-size: 20px;
+  background-color: black;
+}
+
+.active{
+  font-weight: 600;
+}
+.nav-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-toggle{
+  font-size: 1.5rem;
+  border: transparent;
+  background: transparent;
+  transition: all .3s linear;
+}
+.nav-toggle:hover{
+  transform: rotate(90deg);
+  color: #9D9D9D;
+}
+
+.links {
+  height: 0;
+  overflow: hidden;
+  transition: all .3s linear;
+  margin:0;
+}
+
+.show-links {
+  height:11.5rem;
+}
+
+.links a {
+  color: white;
+  margin: .5rem 1rem;
+  display: block;
+  transition: all .3s linear;
+}
+.links a:hover {
+  margin: 1rem;
+  color: #9D9D9D;
+}
+
+.social-icons {
+  display: none;
+}
+
+@media screen and (min-width:800px){
+  .nav-central{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .links{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height:auto;
+  }
+  .links a {
+
+  }
+  .links a:hover {
+    margin: .5rem 1rem;
+  }
+  .nav-toggle{
+    display: none;
+  }
+  .social-icons{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .social-icons a {
+  color: white;
+  margin: .5rem;
+  }
+
+  .social-icons:hover {
+    color:#9D9D9D;
+  }
+}
+/* global */
+.container{
+  margin:150px 5vw;
+}
+
+/* title div */
+.title-div{
+  text-align: center;
+}
+.title-div img{
+  width:100%;
+  opacity: .85;
+}
+
+.text-centered{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/*  about-me */
+.about{
+  display: flex;
+  text-align: left;
+  }
+
+.about-img{
+width:25vw;
+margin: 0 5vw;
+}
+.about-right{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 35vw;
+  height: auto;
+  padding: 0 5vw;
+  margin: 0 5vw;
+}
+.about-right button{
+  background-color: inherit;
+  color: #ff7d13;
+  font-family: inherit;
+  font-size: 1.3rem;
+  padding: 16px;
+  width:60%;
+  margin:39px 20%;
+  border: 1px #ff7d13 solid;
+
+}
+/* talks */
+.talks{
+  padding: 0 5vw;
+}
+.videos-div{
+display: flex;
+justify-content: space-between;
+}
+
+/* publications */
+.publications h2{
+  margin-left: 5vw;
+}
+.publications h4{
+    color: #ff7d13;
+}
+.pub-grid{
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3% ;
+  align-items: stretch;
+  padding:0;
+  gap:20px;
+}
+.pub-grid li{
+  display:flex;
+  flex-direction: column;
+  border: solid 1px #5d5d5d;
+  padding: 10px 42px 26px;
+}
