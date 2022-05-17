@@ -72,13 +72,15 @@ ul {
 
 a {
   text-decoration: none;
+    color: white;
 }
 
 /* navbar */
 nav {
-  box-shadow: 0 4px 10px #9D9D9D;
+  /* box-shadow: 0 4px 10px #9D9D9D; */
   font-size: 2rem;
   background-color: black;
+  border-bottom:  solid 1px grey;
 }
 
 nav h2 {
@@ -117,7 +119,6 @@ nav h2 {
 }
 
 .links a {
-  color: white;
   margin: .5rem 20px;
   display: block;
   transition: all .3s linear;
@@ -178,7 +179,7 @@ nav h2 {
 
 /* global */
 .container {
-  margin: 150px 5vw;
+  margin: 150px 5%;
 }
 
 @media (max-width:750px) {
@@ -196,6 +197,7 @@ nav h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom:  solid 1px grey;
 }
 
 @media (max-width: 750px) {
@@ -368,7 +370,22 @@ nav h2 {
   }
 }
 
-/* contact */
+/* publications page */
+.publications-page{
+padding: 0 5%;
+}
+
+ .pub-link{
+display: inline-block;
+text-align: center;
+ }
+ .pub-link i{
+   font-size: 3rem;
+   color: #ff7d13;
+   padding: 20px;
+ }
+
+/* Contact Section*/
 .contact h2 {
   margin-left: 5%;
 }
@@ -387,4 +404,60 @@ nav h2 {
   .find-me {
     margin-top: 60px;
   }
+}
+
+
+/* About Page */
+.container2{
+padding:50px 10%;
+text-align: center;
+}
+
+.a{
+  grid-area: first-pic;
+}
+.b{
+  grid-area: first-text;
+}
+.c{
+  grid-area: second-text;
+}
+.d{
+  grid-area: second-pic;
+}
+.e{
+  grid-area: third-pic;
+}
+.f{
+  grid-area: third-text;
+}
+
+.about-grid-container{
+  display: grid;
+  grid-template-areas:
+  'first-pic first-text first-text'
+  'second-text second-text second-pic'
+  'third-pic third-text third-text';
+  margin-top: 100px;
+  grid-row-gap: 100px;
+}
+
+.flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.right-text{
+  text-align: left;
+  margin-left: 5%;
+}
+.left-text{
+  margin-right: 5%;
+  text-align: right;
+}
+.damo2-img{
+  height:400px;
+}
+.data-img{
+  height: 400px;
 }
